@@ -1,0 +1,149 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.bg-home {
+    position: absolute;
+}
+
+.bg-home::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(43, 43, 43, 0.5), #444925), url("../Assets/Background.jpg");
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.65;
+    background-position: 50%;
+}
+
+//--  BG HOME finalizado
+
+//--  começo Hero    
+
+.hero {
+    color: $white-normal;
+    min-height: 80vh;
+    display: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    font-family: "Sora", sans-serif;
+
+
+    h1 {
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 28px;
+        margin-top: 250px;
+        margin-right: 100px;
+    }
+
+    .fraseh1 {
+        margin-right: 150px;
+        text-align: center;
+        line-height: 150%;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 370px) and (max-width: 1024px) {
+
+    .hero {
+        min-height: 100vh;
+
+        h1 {
+            margin-left: 35px;
+            font-size: 24px;
+            padding: 0 14px;
+            width: 100%;
+            align-items: center;
+        }
+        .fraseh1 {
+            padding: 0 14px;
+            margin-left: 80px;
+            color: $white-dark;
+            margin-bottom: 100px;
+            font-size: 16px;
+            align-items: center;
+        }
+
+    }
+    
+
+    
+}
+
+// ------ fim Hero ------ //
+
+
+
+// ------ Começo About ------ //
+
+
+
+.about {
+    background-color: $yellowbrown-ativamente;
+    font-family: "Sora", sans-serif;
+    overflow: hidden;   
+}
+.about-content {
+    align-items: center;
+    display: flex;
+    color: $white-normal;
+    gap: 14px;
+    div {
+    flex: 1;
+    }
+
+
+    .imgativamente {
+        max-width: 800px;
+        width: 550px;
+        height: 400px;
+        margin-left: 10px;
+        margin-top: 10px;
+        opacity: 0.8;
+    }
+
+    .about-description {
+
+        
+        padding-bottom: 260px;
+
+    }
+}
+
+@media screen and (min-width: 370px) and (max-width: 1024px) {
+
+    .imgativamente {
+        display: none;
+    }
+    
+    .about-description {
+        display: flex;
+        
+        
+        
+    }
+
+    
+
+
+    }
+
+    
+
+
+
+

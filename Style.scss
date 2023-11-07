@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+
+@import "partials/colors";
+@import "partials/header";
+@import "partials/layout";
+
+body {
+
+    background-color: $greydarker-ativamente;
+    font-family: 'Sora', sans-serif, ;
+    width: 100%;
+    height: 20vh;
+    position: relative;
+
+}
+
+svg {
+
+    width: 100%;
+}
+
+img {
+
+    width: 50%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
